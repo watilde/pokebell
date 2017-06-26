@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+const minimist = require('minimist')
+const { encode, decode } = require('.')
+const pkg = require('./package')
+
+const argv = minimist(process.argv.slice(2))
+
+if (argv.h) {
+  console.log(`
+    Usage:
+      pokebell encode <text>
+      pokebell decode <text>
+
+    Options:
+      -h     display this message
+      -v     display the version of pokebell
+  `)
+
+  process.exit(0)
+}
+
+if (argv.v) {
+  console.log(pkg.version)
+  process.exit(0)
+}
+
+if (argv._[0] === 'encode') {
+  console.log(encode(argv._.splice(1).join('')))
+  process.exit(0)
+}
+
+if (argv._[0] === 'decode') {
+  console.log(decode(argv._.splice(1).join('')))
+  process.exit(0)
+}

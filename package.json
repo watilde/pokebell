@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "description": "it's all about 📟 input in Japanese",
   "main": "index.js",
+  "bin": "pokebell",
   "scripts": {
     "test": "node test.js"
   },
   "keywords": [],
   "author": "Daijiro Wachi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
 }

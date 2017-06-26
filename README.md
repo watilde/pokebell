@@ -1,6 +1,25 @@
 # Pokebell decoder
 it's all about 📟 input in Japanese.
 
+## cli
+### Install
+```console
+$ npm i -g pokebell
+```
+
+### Usage
+```console
+$ pokebell -h
+
+    Usage:
+      pokebell encode <text>
+      pokebell decode <text>
+
+    Options:
+      -h     display this message
+      -v     display the version of pokebell
+```
+
 ## api
 
 ### pokebell.encode
