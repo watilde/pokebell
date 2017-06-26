@@ -9,14 +9,9 @@ const encode = (input) => {
 }
 
 const decode = (input) => {
-  const str = input.replace(/ /g, '88')
-  const len = str.length
-  let out = ''
-  for (let i = 0; len > i; i += 2) {
-    const key = ((Number(str[i]) - 1) * 10) + Number(str[i + 1]) - 1
-    out += table[key]
-  }
-  return out
+  return input.replace(/ /g, '88').split(/(.{2})/).filter(n=>n).map((str) => {
+    return table[((Number(str[0]) - 1) * 10) + Number(str[1])]
+  }).join('')
 }
 
 module.exports = {
