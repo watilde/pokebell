@@ -1,0 +1,12 @@
+{
+  "name": "pokebell",
+  "version": "0.0.1",
+  "description": "pokebell decoder",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "Daijiro Wachi",
+  "license": "ISC"
+}
