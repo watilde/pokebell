@@ -1,7 +1,7 @@
 {
   "name": "pokebell",
   "version": "0.0.1",
-  "description": "pokebell decoder",
+  "description": "it's all about 📟 input in Japanese",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
